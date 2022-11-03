@@ -1,7 +1,7 @@
-using lab1.Services;
+using lab1.Services.lab2;
 using Microsoft.AspNetCore.Mvc;
 
-namespace lab1.Controllers
+namespace lab1.Controllers.lab2
 {
     [ApiController]
     [Route("[controller]/[action]")]
@@ -48,7 +48,6 @@ namespace lab1.Controllers
         [HttpGet(Name = "GetCalculate")]
         public int GetCalculate()
         {
-           
             return calculate.GetValue();
         }
 
@@ -65,10 +64,7 @@ namespace lab1.Controllers
         [HttpPost(Name = "PostCalculateAdd")]
         public int PostCalculateAdd(int value)
         {
-            
-
             calculate.SetValue(calculate.Add(value));
-
             return calculate.GetValue();
         }
 
