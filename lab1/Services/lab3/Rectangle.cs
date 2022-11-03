@@ -12,4 +12,9 @@ public class Rectangle : Shape
     {
         return new Rectangle(a.Width + b.Width, a.Height + b.Height);
     }
+
+    public override int GetShorterSize()
+    {
+        return base.GetShorterSize();
+    }
 }

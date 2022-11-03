@@ -14,7 +14,7 @@ public abstract class Shape
         return Width * Height * x;
     }
     
-    public int GetShorterSize()
+    public virtual int GetShorterSize()
     {
         return new List<int>(){Width, Height}.Min();
     }
